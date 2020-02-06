@@ -1,3 +1,5 @@
+package model;
+
 public class Book {
     private String title;
     private String author;
@@ -67,7 +69,7 @@ public class Book {
         this.isbn = isbn;
     }
 
-    void printInfo() {
+    public void printInfo() {
         String info = title + "; " + author + "; " + releaseDate + "; " +
                 pages + "; " + publisher + "; " + isbn;
         System.out.println(info);
