@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e07468da-bf27-407a-bc4b-2ec843b1d5d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/model/Magazine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Publication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/LibraryApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/LibraryApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/LibraryControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,37 +84,58 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580989417786</updated>
-      <workItem from="1580989419992" duration="7163000" />
+      <workItem from="1580989419992" duration="7308000" />
+      <workItem from="1581000565457" duration="7000" />
+      <workItem from="1581354737477" duration="4886000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1580990754716">
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1581355750459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580990754716" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580997189312">
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581355750459" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580997909874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580997189312" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580997189312">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580997909874" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580997909874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580997189312" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580997189311">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580997909874" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580997909873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580997189311" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580997189312">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580997909873" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580997909874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580997189312" />
-    <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580997814700">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580997909874" />
+    <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581358945585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580997814700" />
+    <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581358945585" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1581358836780">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581358836780" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581355702017">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581355702017" />
   </component>
 </project>
