@@ -23,10 +23,8 @@ public class DataReader {
         String isbn = sc.nextLine();
         System.out.println("Data wydania: ");
         int releaseDate = getInt();
-        sc.nextLine();
         System.out.println("Ilość stron: ");
         int pages = getInt();
-        sc.nextLine();
 
         return new Book(title, author, releaseDate, pages, publisher, isbn);
     }
@@ -44,9 +42,6 @@ public class DataReader {
         int month = getInt();
         System.out.println("Dzień: ");
         int day = getInt();
-        sc.nextLine();
-
-        sc.nextLine();
 
         return new Magazine(title, year, publisher, month, day, language);
     }
