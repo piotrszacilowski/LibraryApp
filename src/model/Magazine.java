@@ -40,4 +40,9 @@ public class Magazine extends Publication {
         String info = getTitle() + "; " + getPublisher() + "; " + getYear() + " - " + month + " - " + day + " " + language;
         System.out.println(info);
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "; " + month + "; " + day + "; " + language;
+    }
 }
