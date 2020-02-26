@@ -8,8 +8,8 @@ import model.Magazine;
 public class LibraryControl {
     private static final int EXIT = 0;
     private static final int ADD_BOOK = 1;
-    private static final int PRINT_BOOKS = 2;
-    private static final int ADD_MAGAZINE = 3;
+    private static final int ADD_MAGAZINE = 2;
+    private static final int PRINT_BOOKS = 3;
     private static final int PRINT_MAGAZINE = 4;
 
     private DataReader dataReader = new DataReader();
@@ -73,6 +73,5 @@ public class LibraryControl {
         System.out.println(ADD_MAGAZINE + " - dodanie nowego magazynu");
         System.out.println(PRINT_BOOKS + " - wyświetl dostępne książki");
         System.out.println(PRINT_MAGAZINE + " - wyświetl dostępne magazyny");
-
     }
 }
