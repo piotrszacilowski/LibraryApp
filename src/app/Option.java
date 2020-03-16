@@ -1,11 +1,11 @@
 package app;
 
 public enum Option {
-    EXIT(1,"wyjście z programu"),
-    ADD_BOOK(2,"dodanie nowej książki"),
-    ADD_MAGAZINE(3,"dodanie nowego magazynu"),
-    PRINT_BOOKS(4,"wyświetl dostępne książki"),
-    PRINT_MAGAZINES(5,"wyświetl dostępne magazyny");
+    EXIT(0,"wyjście z programu"),
+    ADD_BOOK(1,"dodanie nowej książki"),
+    ADD_MAGAZINE(2,"dodanie nowego magazynu"),
+    PRINT_BOOKS(3,"wyświetl dostępne książki"),
+    PRINT_MAGAZINES(4,"wyświetl dostępne magazyny");
 
     private final int value;
     private final String description;
