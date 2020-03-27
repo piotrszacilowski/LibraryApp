@@ -8,9 +8,9 @@ public class ConsolePrinter {
 
     public void printBooks(Publication[] publications) {
         int countBooks = 0;
-        for (int i = 0; i < publicationsNumber; i++) {
-            if (publications[i] instanceof Book) {
-                System.out.println(publications[i]);
+        for (Publication publication : publications) {
+            if (publication instanceof Book) {
+                System.out.println(publication);
                 countBooks++;
             }
         }
@@ -22,9 +22,9 @@ public class ConsolePrinter {
     public void printMagazine(Publication[] publications) {
         int countMagazines = 0;
 
-        for (int i = 0; i < publicationsNumber; i++) {
-            if (publications[i] instanceof Magazine) {
-                System.out.println(publications[i]);
+        for (Publication publication : publications) {
+            if (publication instanceof Magazine) {
+                System.out.println(publication);
                 countMagazines++;
             }
         }
