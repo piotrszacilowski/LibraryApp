@@ -14,39 +14,12 @@ public class Library {
         }
     }
 
-    public void printBooks() {
-        int countBooks = 0;
-        for (int i = 0; i < publicationsNumber; i++) {
-            if (publications[i] instanceof Book) {
-                System.out.println(publications[i]);
-                countBooks++;
-            }
-        }
-        if (countBooks == 0) {
-            System.out.println("Brak książek w bibliotece");
-        }
-    }
-
     public void addMagazine(Magazine magazine) {
         if (publicationsNumber < MAX_PUBLICATIONS) {
             publications[publicationsNumber] = magazine;
             publicationsNumber++;
         } else {
             System.out.println("Maksymalna liczba magazynów została osiągnięta!");
-        }
-    }
-
-    public void printMagazine() {
-        int countMagazines = 0;
-
-        for (int i = 0; i < publicationsNumber; i++) {
-            if (publications[i] instanceof Magazine) {
-                System.out.println(publications[i]);
-                countMagazines++;
-            }
-        }
-        if (countMagazines == 0) {
-            System.out.println("Brak magazynów w bibliotece");
         }
     }
 }
