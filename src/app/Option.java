@@ -29,6 +29,10 @@ public enum Option {
     }
 
     static Option createFromInt(int option) {
-        return Option.values()[option];
+        try {
+            return Option.values()[option];
+        } catch (ArrayIndexOutOfBoundsException e) {
+
+        }
     }
 }
