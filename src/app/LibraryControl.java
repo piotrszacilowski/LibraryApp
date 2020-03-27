@@ -1,12 +1,18 @@
 package app;
 
+import exception.NoSuchOptionException;
+import io.ConsolePrinter;
 import io.DataReader;
 import model.Book;
 import model.Library;
 import model.Magazine;
+import model.Publication;
+
+import java.util.InputMismatchException;
 
 public class LibraryControl {
 
+    private ConsolePrinter printer = new ConsolePrinter();
     private DataReader dataReader = new DataReader();
     private Library library = new Library();
 
@@ -15,7 +21,7 @@ public class LibraryControl {
 
         do {
             printOptions();
-            option = Option.createFromInt(dataReader.getInt());
+            option = getOption();
             switch (option) {
                 case ADD_BOOK:
                     addBook();
@@ -38,8 +44,25 @@ public class LibraryControl {
         } while (option != Option.EXIT);
     }
 
+    private Option getOption() {
+        boolean optionOk = false;
+        Option option = null;
+        while (optionOk) {
+            try {
+                Option.createFromInt(dataReader.getInt());
+                optionOk = true;
+            } catch (NoSuchOptionException e) {
+                printer.printLine(e.getMessage());
+            } catch (InputMismatchException e) {
+                printer.printLine("Wprowadzono złą wartość, spróbuj ponownie.");
+            }
+        }
+        return option;
+    }
+
     private void printMagazine() {
-        library.printMagazine();
+        Publication[] publications = library.getPublications();
+        printer.printMagazine(publications);
     }
 
     private void addMagazine() {
@@ -53,7 +76,8 @@ public class LibraryControl {
     }
 
     private void printBooks() {
-        library.printBooks();
+        Publication[] publications = library.getPublications();
+        printer.printBooks(publications);
     }
 
     private void exit() {
