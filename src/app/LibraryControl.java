@@ -39,7 +39,7 @@ public class LibraryControl {
                     exit();
                     break;
                 default:
-                    System.out.println("Nie ma takiej opcji, wprowadź ponownie.");
+                    printer.printLine("Nie ma takiej opcji, wprowadź ponownie.");
             }
         } while (option != Option.EXIT);
     }
@@ -47,7 +47,7 @@ public class LibraryControl {
     private Option getOption() {
         boolean optionOk = false;
         Option option = null;
-        while (optionOk) {
+        while (!optionOk) {
             try {
                 Option.createFromInt(dataReader.getInt());
                 optionOk = true;
@@ -81,14 +81,14 @@ public class LibraryControl {
     }
 
     private void exit() {
-        System.out.println("Koniec programu!");
+        printer.printLine("Koniec programu!");
         dataReader.close();
     }
 
     private void printOptions() {
-        System.out.println("Wybierz opcję: ");
-        for (Option value : Option.values()) {
-            System.out.println(value);
+        printer.printLine("Wybierz opcję: ");
+        for (Option option : Option.values()) {
+            printer.printLine(option.toString());
         }
     }
 }
