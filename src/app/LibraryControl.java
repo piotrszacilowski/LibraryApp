@@ -13,7 +13,7 @@ import java.util.InputMismatchException;
 public class LibraryControl {
 
     private ConsolePrinter printer = new ConsolePrinter();
-    private DataReader dataReader = new DataReader();
+    private DataReader dataReader = new DataReader(printer);
     private Library library = new Library();
 
     public void controlLoop() {
