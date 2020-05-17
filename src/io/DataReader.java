@@ -7,10 +7,10 @@ import java.util.Scanner;
 
 public class DataReader {
     private Scanner sc = new Scanner(System.in);
-    private ConsolePrinter consolePrinter;
+    private ConsolePrinter printer;
 
-    public DataReader(ConsolePrinter consolePrinter) {
-        this.consolePrinter = consolePrinter;
+    public DataReader(ConsolePrinter printer) {
+        this.printer = printer;
     }
 
     public void close() {
@@ -18,34 +18,34 @@ public class DataReader {
     }
 
     public Book readAndCreateBook() {
-        System.out.println("Tytuł: ");
+        printer.printLine("Tytuł: ");
         String title = sc.nextLine();
-        System.out.println("Autor: ");
+        printer.printLine("Autor: ");
         String author = sc.nextLine();
-        System.out.println("Wydawnictwo: ");
+        printer.printLine("Wydawnictwo: ");
         String publisher = sc.nextLine();
-        System.out.println("ISBN: ");
+        printer.printLine("ISBN: ");
         String isbn = sc.nextLine();
-        System.out.println("Data wydania: ");
+        printer.printLine("Data wydania: ");
         int releaseDate = getInt();
-        System.out.println("Ilość stron: ");
+        printer.printLine("Ilość stron: ");
         int pages = getInt();
 
         return new Book(title, author, releaseDate, pages, publisher, isbn);
     }
 
     public Magazine readAndCreateMagazine() {
-        System.out.println("Tytuł: ");
+        printer.printLine("Tytuł: ");
         String title = sc.nextLine();
-        System.out.println("Wydawnictwo: ");
+        printer.printLine("Wydawnictwo: ");
         String publisher = sc.nextLine();
-        System.out.println("Język: ");
+        printer.printLine("Język: ");
         String language = sc.nextLine();
-        System.out.println("Rok wydania: ");
+        printer.printLine("Rok wydania: ");
         int year = getInt();
-        System.out.println("Miesiąc: ");
+        printer.printLine("Miesiąc: ");
         int month = getInt();
-        System.out.println("Dzień: ");
+        printer.printLine("Dzień: ");
         int day = getInt();
 
         return new Magazine(title, year, publisher, month, day, language);

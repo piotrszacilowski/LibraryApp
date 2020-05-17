@@ -49,7 +49,7 @@ public class LibraryControl {
         Option option = null;
         while (!optionOk) {
             try {
-                Option.createFromInt(dataReader.getInt());
+                option = Option.createFromInt(dataReader.getInt());
                 optionOk = true;
             } catch (NoSuchOptionException e) {
                 printer.printLine(e.getMessage());
